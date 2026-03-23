@@ -33,4 +33,13 @@ SELECT product, price, delivery_date FROM products;
 
 DELETE FROM products WHERE s_no = 4;
 
-SELECT 0.3*price as DiscountedAmount from products;
+SELECT 0.3*price as DiscountedAmount from products; 
+
+SELECT * 
+FROM products
+WHERE price::text LIKE '%000000';
+
+
+SELECT * 
+FROM products
+WHERE price > 500000;
